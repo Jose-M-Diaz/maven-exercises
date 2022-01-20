@@ -8,7 +8,7 @@ public class Input {
         System.out.print("Enter Something: ");
         String userInput = sc.nextLine();
         System.out.println("You Entered: " + userInput);
-        if (userInput == "") {
+        if (StringUtils.isNumeric(userInput) == true) {
             //System.out.println(StringUtils.isNumeric(userInput));
             System.out.println(userInput + " is a number");
         } else {
